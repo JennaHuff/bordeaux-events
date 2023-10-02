@@ -1,7 +1,7 @@
 import { List } from "./List";
 import styles from "./page.module.css";
 
-export async function getData() {
+async function getData() {
     const response = await fetch(
         `https://opendata.bordeaux-metropole.fr/api/explore/v2.1/catalog/datasets/met_agenda/records?limit=20`
     );
